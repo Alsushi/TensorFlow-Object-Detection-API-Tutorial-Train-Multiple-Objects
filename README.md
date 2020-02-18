@@ -1,4 +1,4 @@
-# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10
+# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU) on Windows 10 (Linux too)
 
 This readme describes every step required to get going with your own object detection classifier: 
 1. [Installing Anaconda, CUDA, and cuDNN](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn)
