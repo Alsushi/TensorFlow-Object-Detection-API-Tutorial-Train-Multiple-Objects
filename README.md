@@ -12,6 +12,8 @@ This readme describes every step required to get going with your own object dete
 
 [Appendix: Common Errors](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#appendix-common-errors)
 
+[Appendix: legacy stuff](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#appendix-common-errors)
+
 ---
 
 ## Brief Summary
