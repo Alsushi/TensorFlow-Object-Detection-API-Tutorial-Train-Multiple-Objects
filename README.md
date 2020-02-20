@@ -1,8 +1,8 @@
 # How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU NVIDIA) on Windows 10 (Linux too)
 
 This readme describes every step required to get going with your own object detection classifier: 
-1. [Quick setup of the system]()
-2. [Manual setup]()
+1. [Quick setup of the system](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-quick-setup-of-the-system)
+2. [Manual setup](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#2-manual-setup)
 2.1 [Installing Anaconda, CUDA, and cuDNN](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn)
 2.2 [Setting up the Object Detection directory structure and Anaconda Virtual Environment](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#2-set-up-tensorflow-directory-and-anaconda-virtual-environment)
 2.3 [Gathering and labeling pictures](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)
@@ -57,6 +57,7 @@ docker pull jitteam/
 If it is the first setup.
 
 ### 2.1. Install Anaconda, CUDA, and cuDNN
+**Disclaimer** it is a good practice to build different environment for each project.  One can skip this part by using a docker.  
 Follow [this YouTube video by Mark Jay](https://www.youtube.com/watch?v=RplXYjxgZbw), which shows the process for installing Anaconda, CUDA, and cuDNN. You do not need to actually install TensorFlow as shown in the video, because we will do that later in Step 2. The video is made for TensorFlow-GPU v1.4, so download and install the CUDA and cuDNN versions for the latest TensorFlow version, rather than CUDA v8.0 and cuDNN v6.0 as instructed in the video. The [TensorFlow website](https://www.tensorflow.org/install/gpu) indicates which versions of CUDA and cuDNN are needed for the latest version of TensorFlow. 
 
 If you are using an older version of TensorFlow, make sure you use the CUDA and cuDNN versions that are compatible with the TensorFlow version you are using. [Here](https://www.tensorflow.org/install/source#tested_build_configurations) is a table showing which version of TensorFlow requires which versions of CUDA and cuDNN.
