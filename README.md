@@ -21,6 +21,7 @@ This readme describes every step required to get going with your own object dete
 
 ## Brief Summary
 *Last updated: 2/22/2020 with TensorFlow v1.13.1*
+**PRO TIP** when encountering issues, change 1 thing at a time.  
 
 *A Korean translation of this guide is located in the [translate folder](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/translate/README.md) (thanks @cocopambag!). If you would like to contribute a translation in another language, please feel free! You can add it as a pull request and I will merge it when I get the chance.*
 
@@ -57,6 +58,17 @@ Install Docker then,
 Basically any docker images with tensorflow-gpu will work here.
 Assuming the Tensorflow files are stored locally, we will mount them on the docker. Therefore the image will help to secure and virtualize the environment.
 
+**USE MODELS based on the TensorFlow Release**, ie for TF1.13 use release 1.13; otherwise it will pop difficult errors to debug.
+
+If you don't have a clue, use the tf/models github repo.
+so every system reboot we will explicitely set these 2 options, therefore we can easily repeat the tutorial with another model and dataset.
+
+cd TensorFlow/models-master/research **OR** cd models/models-1.13.0/research
+
+```
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+protoc object_detection/protos/*.proto --python_out=.
+```
 
 ### 2. Manual setup
 If it is the first setup.
