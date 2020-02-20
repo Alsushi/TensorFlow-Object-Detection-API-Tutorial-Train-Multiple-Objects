@@ -23,6 +23,7 @@ This readme describes every step required to get going with your own object dete
 *Last updated: 2/22/2020 with TensorFlow v1.13.1*
 **PRO TIP** when encountering issues, change 1 thing at a time.  
 **PRO TIP2** find dataset with already done label box OR find opencv scripts to do it automatically. 
+This tutorial is based on the original train script.
 
 *A Korean translation of this guide is located in the [translate folder](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/translate/README.md) (thanks @cocopambag!). If you would like to contribute a translation in another language, please feel free! You can add it as a pull request and I will merge it when I get the chance.*
 
