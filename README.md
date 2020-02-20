@@ -1,4 +1,4 @@
-# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (GPU NVIDIA) on Windows 10 (Linux too)
+# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (NVIDIA GPU)
 
 This readme describes every step required to get going with your own object detection classifier: 
 1. [Quick setup of the system](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-quick-setup-of-the-system)
@@ -19,15 +19,13 @@ This readme describes every step required to get going with your own object dete
 ---
 
 ## Brief Summary
-*Last updated: 6/22/2019 with TensorFlow v1.13.1*
+*Last updated: 2/22/2020 with TensorFlow v1.13.1*
 
 *A Korean translation of this guide is located in the [translate folder](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/translate/README.md) (thanks @cocopambag!). If you would like to contribute a translation in another language, please feel free! You can add it as a pull request and I will merge it when I get the chance.*
 
 This repository is a tutorial for how to use TensorFlow's Object Detection API to train an object detection classifier for multiple objects on Windows 10, 8, or 7. (It will also work on Linux-based OSes with some minor changes.) It was originally written using TensorFlow version 1.5, but will also work for newer versions of TensorFlow.
 
-I also made a YouTube video that walks through this tutorial. Any discrepancies between the video and this written tutorial are due to updates required for using newer versions of TensorFlow. 
-
-**If there are differences between this written tutorial and the video, follow the written tutorial!**
+**2019 update** The training script used have now changed, the old one is still valid. However, as Github hosts TF2.x models, it will be necessary to download TF specific models on the Tensorfloaw/Models > RELEASE tab.  *Do this only if you encounter weird errors at training*
 
 [![Link to my YouTube video!](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/master/doc/YouTube%20video.jpg)](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
 
