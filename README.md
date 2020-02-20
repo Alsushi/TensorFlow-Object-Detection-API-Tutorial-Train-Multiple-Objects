@@ -1,9 +1,9 @@
-# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (NVIDIA GPU)
-### Works with Cloud / Computer+GPU / Jetson NANO IoT board.
+# How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow
+### Works with Cloud+GPU / Computer+GPU / Jetson NANO IoT board.
 
 This readme describes every step required to get going with your own object detection classifier: 
 1. [Quick setup of the system](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-quick-setup-of-the-system)
-2. [Manual setup](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#2-manual-setup)  
+2. [Manual setup (win10)](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#2-manual-setup)  
 2.1 [Installing Anaconda, CUDA, and cuDNN](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-install-anaconda-cuda-and-cudnn)  
 2.2 [Setting up the Object Detection directory structure and Anaconda Virtual Environment](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#2-set-up-tensorflow-directory-and-anaconda-virtual-environment)  
 2.3 [Gathering and labeling pictures](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#3-gather-and-label-pictures)  
@@ -25,10 +25,10 @@ This readme describes every step required to get going with your own object dete
 *A Korean translation of this guide is located in the [translate folder](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/blob/master/translate/README.md) (thanks @cocopambag!). If you would like to contribute a translation in another language, please feel free! You can add it as a pull request and I will merge it when I get the chance.*
 
 This repository is a tutorial for how to use TensorFlow's Object Detection API to train an object detection classifier for multiple objects on Windows 10, 8, or 7. (It will also work on Linux-based OSes with some minor changes.) It was originally written using TensorFlow version 1.5, but will also work for newer versions of TensorFlow.
+Mandatory parts: setup 2 environment variable (models and paths dependant) - Anaconda and Jupyter are optionnal but useful.
 
-**2019 update** The training script used have now changed, the old one is still valid. However, as Github hosts TF2.x models, it will be necessary to download TF specific models on the Tensorfloaw/Models > RELEASE tab.  *Do this only if you encounter weird errors at training*
 
-[![Link to my YouTube video!](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/master/doc/YouTube%20video.jpg)](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
+[![Link to YouTube video!](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/master/doc/YouTube%20video.jpg)](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
 
 
 The repository provides all the files needed to train a "Pinochle Deck" playing card detector that can accurately detect nines, tens, jacks, queens, kings, and aces. The tutorial describes how to replace these files with your own files to train a detection classifier for whatever your heart desires. It also has Python scripts to test your classifier out on an image, video, or webcam feed.
@@ -50,7 +50,11 @@ TensorFlow-GPU allows your PC to use the video card to provide extra processing 
 ### 1. Quick setup of the system
 By using using Docker we can setup the system on very little time and effort. Besides we will ensure that it is reproducible.
 Install Docker then,
-docker pull jitteam/
+```docker pull jitteam/jetson-nano-tf-gpu
+```
+Basically any docker images with tensorflow-gpu will work here.
+Assuming the Tensorflow files are stored locally, we will mount them on the docker. Therefore the image will help to secure and virtualize the environment.
+
 
 ### 2. Manual setup
 If it is the first setup.
