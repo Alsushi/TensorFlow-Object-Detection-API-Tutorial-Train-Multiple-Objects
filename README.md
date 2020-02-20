@@ -28,6 +28,8 @@ This repository is a tutorial for how to use TensorFlow's Object Detection API t
 Mandatory parts: setup 2 environment variable (models and paths dependant) - Anaconda and Jupyter are optionnal but useful.
 
 
+[CounterStrike-GO flavoured tutorial](https://medium.com/analytics-vidhya/tensorflow-step-by-step-custom-object-detection-tutorial-d7ae840a74e2)
+
 [![Link to YouTube video!](https://raw.githubusercontent.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/master/doc/YouTube%20video.jpg)](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
 
 
