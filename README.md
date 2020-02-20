@@ -1,4 +1,5 @@
 # How To Train an Object Detection Classifier for Multiple Objects Using TensorFlow (NVIDIA GPU)
+### Works with Cloud / Computer+GPU / Jetson NANO IoT board.
 
 This readme describes every step required to get going with your own object detection classifier: 
 1. [Quick setup of the system](https://github.com/Alsushi/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10#1-quick-setup-of-the-system)
